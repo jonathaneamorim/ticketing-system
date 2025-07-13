@@ -3,7 +3,6 @@ package com.ticketingsystem.model.entities;
 import java.time.LocalDate;
 
 public class Usuario {
-    private int id;
     private String cpf;
     private String nome;
     private LocalDate dataNascimento;
@@ -11,20 +10,11 @@ public class Usuario {
 
     public Usuario(){}
 
-    public Usuario(int id, String cpf, String nome, LocalDate dataNascimento, String email) {
-        this.id = id;
+    public Usuario(String cpf, String nome, LocalDate dataNascimento, String email) {
         this.cpf = cpf;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.email = email;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getCpf() {

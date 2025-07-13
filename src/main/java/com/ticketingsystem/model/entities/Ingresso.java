@@ -5,18 +5,15 @@ import com.ticketingsystem.model.enums.CategoriaEnum;
 public class Ingresso {
     private String code;
     private Evento evento;
-    private Usuario usuario;
-    private String assento;
     private CategoriaEnum categoria;
     private Double valor;
+    private Usuario usuario;
 
     public Ingresso(){}
 
-    public Ingresso(String code, Evento evento, Usuario usuario, String assento, CategoriaEnum categoria, Double valor) {
+    public Ingresso(String code, Evento evento, CategoriaEnum categoria, Double valor) {
         this.code = code;
         this.evento = evento;
-        this.usuario = usuario;
-        this.assento = assento;
         this.categoria = categoria;
         this.valor = valor;
     }
@@ -37,22 +34,6 @@ public class Ingresso {
         this.evento = evento;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
-    public String getAssento() {
-        return assento;
-    }
-
-    public void setAssento(String assento) {
-        this.assento = assento;
-    }
-
     public CategoriaEnum getCategoria() {
         return categoria;
     }
@@ -67,5 +48,13 @@ public class Ingresso {
 
     public void setValor(Double valor) {
         this.valor = valor;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }

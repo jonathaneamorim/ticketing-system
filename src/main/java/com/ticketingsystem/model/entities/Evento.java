@@ -5,33 +5,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Evento {
-    private int id;
+    private String id;
     private String nome;
     private LocalDate data;
     private String descricao;
     private String avisos;
     private Endereco endereco;
+    private int classificacaoIndicativa;
     private List<String> atracoes = new ArrayList<>();
     private List<String> patrocinadores = new ArrayList<>();
 
     public Evento() {}
 
-    public Evento(int id, String nome, LocalDate data, String descricao, String avisos, Endereco endereco, List<String> atracoes, List<String> patrocinadores) {
+    public Evento(String id, String nome, LocalDate data, String descricao, String avisos, Endereco endereco, int classificacaoIndicativa, List<String> atracoes, List<String> patrocinadores) {
         this.id = id;
         this.nome = nome;
         this.data = data;
         this.descricao = descricao;
         this.avisos = avisos;
         this.endereco = endereco;
+        this.classificacaoIndicativa = classificacaoIndicativa;
         this.atracoes = atracoes;
         this.patrocinadores = patrocinadores;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -73,6 +75,14 @@ public class Evento {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public int getClassificacaoIndicativa() {
+        return classificacaoIndicativa;
+    }
+
+    public void setClassificacaoIndicativa(int classificacaoIndicativa) {
+        this.classificacaoIndicativa = classificacaoIndicativa;
     }
 
     public List<String> getAtracoes() {

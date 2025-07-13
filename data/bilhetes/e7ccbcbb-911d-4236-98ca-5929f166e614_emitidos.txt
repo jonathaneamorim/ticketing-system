@@ -1,0 +1,5 @@
+Código: e7cc-3708C6 | Evento: Teste | Categoria: Meia-Entrada | Valor: R$72.0
+Código: e7cc-CEC2CE | Evento: Teste | Categoria: Meia-Entrada | Valor: R$72.0
+Código: e7cc-D7188D | Evento: Teste | Categoria: Meia-Entrada | Valor: R$72.0
+Código: e7cc-C44D83 | Evento: Teste | Categoria: Inteira | Valor: R$144.0
+Código: e7cc-9550B4 | Evento: Teste | Categoria: Inteira | Valor: R$144.0

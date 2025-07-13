@@ -2,7 +2,7 @@ package com.ticketingsystem.model.entities;
 
 public class Endereco {
     private String rua;
-    private int numero;
+    private String numero;
     private String cep;
     private String bairro;
     private String cidade;
@@ -13,7 +13,7 @@ public class Endereco {
 
     public Endereco(){}
 
-    public Endereco(String rua, int numero, String cep, String bairro, String cidade, String estado, String pais, String complemento, String pontoReferencia) {
+    public Endereco(String rua, String numero, String cep, String bairro, String cidade, String estado, String pais, String complemento, String pontoReferencia) {
         this.rua = rua;
         this.numero = numero;
         this.cep = cep;
@@ -33,11 +33,11 @@ public class Endereco {
         this.rua = rua;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
@@ -95,5 +95,22 @@ public class Endereco {
 
     public void setPontoReferencia(String pontoReferencia) {
         this.pontoReferencia = pontoReferencia;
+    }
+
+    @Override
+    public String toString() {
+        return this.rua + ","
+                + this.numero + ","
+                + this.cep + ","
+                + this.bairro + ","
+                + this.cidade + ","
+                + this.estado + ","
+                + this.pais + ","
+                + this.complemento + ","
+                + this.pontoReferencia;
+    }
+
+    public String show() {
+        return "Rua: " + this.getRua() + ", " + this.getNumero() + " - " + this.getCidade() + "(" + this.getEstado() + "), " + this.getCep();
     }
 }

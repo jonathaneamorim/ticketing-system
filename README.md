@@ -116,7 +116,8 @@ public class Ingresso {
 
 ### Uso de tratamento de exceção
 
-### Ter prompt de entrada de menu para o usuário entrar com dados (cadastros prévios
+### 
+Ter prompt de entrada de menu para o usuário entrar com dados (cadastros prévios
 podem ser feitos, por exemplo, o cadastro do time de futebol, as pontuações, linhas
 aéreas ou de ônibus, etc). Mas precisa ter uma interação do usuário final com o
 sistema.

@@ -1,7 +1,5 @@
 package com.ticketingsystem.model.entities;
 
-import java.time.LocalDate;
-
 public class Administrador extends Usuario{
     private String nomeOrganizador;
     private String senha;
@@ -10,8 +8,8 @@ public class Administrador extends Usuario{
         super();
     }
 
-    public Administrador(int id, String cpf, String nome, LocalDate dataNascimento, String email, String nomeOrganizador, String senha) {
-        super(id, cpf, nome, dataNascimento, email);
+    public Administrador(String cpf, String nome, String nomeOrganizador, String senha) {
+        super(cpf, nome, null, null); // Construtor da classe usuário
         this.nomeOrganizador = nomeOrganizador;
         this.senha = senha;
     }
@@ -30,5 +28,10 @@ public class Administrador extends Usuario{
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    @Override
+    public String toString() {
+        return this.getNome() + ";" + this.getCpf() + ";" + this.getCpf() + ";" + this.getEmail() + ";" + this.getDataNascimento() + ";" + this.getNomeOrganizador() + ";" + this.getSenha();
     }
 }

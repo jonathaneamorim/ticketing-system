@@ -1,6 +1,13 @@
 package com.ticketingsystem.model.interfaces;
 
+import com.ticketingsystem.model.entities.Evento;
+
+import java.util.List;
+
 public interface EventInterface {
-    public Boolean newEvent();
-    public Boolean deleteEvent();
+    void newEvent();
+    void listEvents();
+    Evento getEventById(String eventId);
+    List<Evento> getEvents();
+    void deleteEvent();
 }

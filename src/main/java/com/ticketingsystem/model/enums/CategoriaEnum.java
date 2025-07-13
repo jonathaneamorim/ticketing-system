@@ -1,20 +1,16 @@
 package com.ticketingsystem.model.enums;
 
 public enum CategoriaEnum {
-    GRATUIDADE(0.0),
-    MEIA(50.0),
-    INTEIRA(100.0),
-    VIP(0.0);
+    MEIA("Meia-Entrada"),
+    INTEIRA("Inteira");
 
-    private final double valorBase;
+    private final String descricao;
 
-    CategoriaEnum(double valorBase) {
-        this.valorBase = valorBase;
+    CategoriaEnum(String descricao) {
+        this.descricao = descricao;
     }
 
-    public double getValorBase() {
-        return valorBase;
+    public String getDescricao() {
+        return descricao;
     }
-
-    // public static double calcula
 }
